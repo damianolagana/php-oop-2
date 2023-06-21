@@ -6,12 +6,12 @@ class Product {
     public $type;
     public $category;
 
-    public function __construct($name,$price,$type,$category)
+    public function __construct($name,$price,$type, Category $category)
     {
         $this->name = $name;
-        $this->name = $price;
-        $this->name = $type;
-        $this->name = $category;
+        $this->price = $price;
+        $this->type = $type;
+        $this->category = $category;
         
     }
 	

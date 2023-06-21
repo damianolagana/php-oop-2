@@ -1,9 +1,13 @@
 <?php 
 
 require __DIR__ . "/Models/Product.php";
+require __DIR__ . "/Models/Category.php";
 
 
-$guinzaglio = new Product("GuinzaglioX2",20,"cane","Equipment");
+$dog = new Category("per il cane");
+$cat = new Category("per il gatto");
+
+$guinzaglio = new Product("GuinzaglioX2",20,"cane",$dog);
 
 ?>
 
@@ -22,7 +26,7 @@ $guinzaglio = new Product("GuinzaglioX2",20,"cane","Equipment");
             <li><?= $guinzaglio->name ?></li>
             <li><?= $guinzaglio->price ?></li>
             <li><?= $guinzaglio->type ?></li>
-            <li><?= $guinzaglio->category ?></li>
+            <li><?= $guinzaglio->category->name ?></li>
             
         </ul>
     </div>
