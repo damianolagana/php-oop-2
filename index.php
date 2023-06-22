@@ -50,15 +50,15 @@ $products=[
             <div class="row">
                 
                 <h2 class="py-3">Product List</h2>
-                <div class="pt-4">
+                <div class="d-flex flex-wrap justify-content-between  pt-4">
                     <?php foreach($products as $product) {?>
-                       <div class="py-4">
+                       <div class="py-4 col-3 border border-4 rounded ">
                             <h3><?=$product->name?> <span class="<?=$product->category->icon?>"></span></h3>
                             
                             <div class="py-2">
                                 <small>Price: <?=$product->price?> </small>
                             </div>
-                            <img src="<?=$product->image?>" alt="">
+                            <img src="<?=$product->image?> rounded" alt="">
                        </div> 
                     <?php } ?>
                 </div>
