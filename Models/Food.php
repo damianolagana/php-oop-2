@@ -2,15 +2,15 @@
 
 class Food extends Product {
 
-	private $title;
-    private $description;
-    private $image;
+	public $title;
+    public $description;
+    public $image;
 
     public function __construct($title,$description,$image)
     {
-        $this->name = $title;
-        $this->name = $description;
-        $this->name = $image;
+        $this->title = $title;
+        $this->description = $description;
+        $this->image = $image;
     }
 
 
